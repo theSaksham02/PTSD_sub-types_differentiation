@@ -1,0 +1,10 @@
+# Generated artifacts (smoke-test output, figures, tables, checkpoints)
+smoke_output/
+
+# Python bytecode / caches
+__pycache__/
+*.pyc
+*.pyo
+
+# OS
+.DS_Store
