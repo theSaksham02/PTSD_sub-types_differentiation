@@ -163,6 +163,20 @@ python model_smoke_test.py    # model → train → Grad-CAM (11 checks)
 
 ---
 
+## 📖 Documentation
+
+Deeper guides live in [`docs/`](docs/README.md):
+
+| Doc | Topic |
+|---|---|
+| [01 · What is remaining](docs/01_WHAT_IS_REMAINING.md) | Status + blockers |
+| [02 · GPU training guide](docs/02_GPU_TRAINING_GUIDE.md) | Colab T4/A100, OOM, resume |
+| [03 · Code walkthrough](docs/03_CODE_WALKTHROUGH.md) | File-by-file explanation |
+| [04 · Architecture & diagrams](docs/04_ARCHITECTURE.md) | Visual reference (5 figures) |
+| [05 · Undergrad researcher guide](docs/05_UNDERGRAD_RESEARCHER_GUIDE.md) | Ethics, design, metrics, writing |
+
+---
+
 ## 🗂 Repository Structure
 
 ```
@@ -180,8 +194,16 @@ ptsd-affect-recognition/
 │   └── tables.py                       # LaTeX / Markdown result tables
 ├── DATASET_REPORT.md                   # ranked dataset discovery report
 ├── MANIFEST.md                         # data + artifact provenance ledger
+├── docs/                               # documentation + diagrams (see docs/README.md)
+│   ├── 01_WHAT_IS_REMAINING.md
+│   ├── 02_GPU_TRAINING_GUIDE.md
+│   ├── 03_CODE_WALKTHROUGH.md
+│   ├── 04_ARCHITECTURE.md
+│   ├── 05_UNDERGRAD_RESEARCHER_GUIDE.md
+│   └── figures/                        # generated diagrams (5 PNGs)
 ├── README.md
 ├── build_notebook.py                   # assembles the .ipynb from src/
+├── generate_diagrams.py                # renders docs/figures/*.png
 ├── smoke_test.py                       # CPU verification (non-GPU parts)
 ├── model_smoke_test.py                 # CPU verification (PyTorch parts)
 └── validate_notebook.py                # proves the inlined notebook executes
